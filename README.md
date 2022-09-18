@@ -6,7 +6,7 @@
  [👍click here to see page](https://mmehel52.github.io/checkout-page/)
  
 ## Demo
-<img src="" width="900"/>
+<img src="https://github.com/mmehel52/checkout-page/blob/main/img/ezgif.com-gif-maker.gif" width="900"/>
 
 ## User stories;
 
