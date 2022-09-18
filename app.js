@@ -17,7 +17,7 @@ let price3 = 74.99;
 plus11.addEventListener("click", () => {
   sum1++;
   counter11.innerHTML = sum1;
-  pt11.innerHTML = "$" + sum1 * price1;
+  pt11.innerHTML = "$" + (sum1 * price1).toFixed(2);
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
@@ -29,8 +29,8 @@ minus11.addEventListener("click", () => {
   if (sum1 > 0) {
     sum1--;
     counter11.innerHTML = sum1;
-    pt11.innerHTML = "$" + sum1 * 54.99;
-    let a = sum1 * 54.99 + sum2 * 45.99 + sum3 * 74.999;
+    pt11.innerHTML = "$" + (sum1 * price1).toFixed(2);
+    let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
     shipping.innerHTML = "$15";
@@ -69,7 +69,7 @@ minus22.addEventListener("click", () => {
   if (sum2 > 0) {
     sum2--;
     counter22.innerHTML = sum2;
-    pt22.innerHTML = "$" + sum2 * price2;
+    pt22.innerHTML = "$" + (sum2 * price2).toFixed(2);
     let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
@@ -96,7 +96,7 @@ const pt33 = document.getElementById("pt3");
 plus33.addEventListener("click", () => {
   sum3++;
   counter33.innerHTML = sum3;
-  pt33.innerHTML = "$" + sum3 * price3;
+  pt33.innerHTML = "$" + (sum3 * price3).toFixed(2);
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
