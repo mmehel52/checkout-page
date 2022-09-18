@@ -57,7 +57,7 @@ const pt22 = document.getElementById("pt2");
 plus22.addEventListener("click", () => {
   sum2++;
   counter22.innerHTML = sum2;
-  pt22.innerHTML = "$" + sum2 * price2;
+  pt22.innerHTML = "$" + (sum2 * price2).toFixed(2);
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
@@ -107,7 +107,7 @@ minus33.addEventListener("click", () => {
   if (sum3 > 0) {
     sum3--;
     counter33.innerHTML = sum3;
-    pt33.innerHTML = "$" + sum3 * price3;
+    pt33.innerHTML = "$" + (sum3 * price3).toFixed(2);
     let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
