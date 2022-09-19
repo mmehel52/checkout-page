@@ -21,8 +21,10 @@ plus11.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
 
 minus11.addEventListener("click", () => {
@@ -33,8 +35,10 @@ minus11.addEventListener("click", () => {
     let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-    shipping.innerHTML = "$15";
-    total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+    let b;
+    a === 0 ? (b = 0) : (b = 15);
+    shipping.innerHTML = "$" + b.toFixed(2);
+    total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
   }
 });
 remove11.addEventListener("click", () => {
@@ -43,8 +47,10 @@ remove11.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
 
 // ********for goods2*******************************
@@ -61,8 +67,10 @@ plus22.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
 
 minus22.addEventListener("click", () => {
@@ -73,8 +81,10 @@ minus22.addEventListener("click", () => {
     let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-    shipping.innerHTML = "$15";
-    total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+    let b;
+    a === 0 ? (b = 0) : (b = 15);
+    shipping.innerHTML = "$" + b.toFixed(2);
+    total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
   }
 });
 remove22.addEventListener("click", () => {
@@ -83,8 +93,10 @@ remove22.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
 // ********for goods3*******************************
 const plus33 = document.getElementById("plus3");
@@ -100,8 +112,10 @@ plus33.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
 minus33.addEventListener("click", () => {
   if (sum3 > 0) {
@@ -111,8 +125,10 @@ minus33.addEventListener("click", () => {
     let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
     subtotal.innerHTML = "$" + a.toFixed(2);
     tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-    shipping.innerHTML = "$15";
-    total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+    let b;
+    a === 0 ? (b = 0) : (b = 15);
+    shipping.innerHTML = "$" + b.toFixed(2);
+    total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
   }
 });
 
@@ -122,6 +138,8 @@ remove33.addEventListener("click", () => {
   let a = sum1 * price1 + sum2 * price2 + sum3 * price3;
   subtotal.innerHTML = "$" + a.toFixed(2);
   tax.innerHTML = "$" + (a * (18 / 100)).toFixed(2);
-  shipping.innerHTML = "$15";
-  total.innerHTML = "$" + (15 + a + (a * 18) / 100).toFixed(2);
+  let b;
+  a === 0 ? (b = 0) : (b = 15);
+  shipping.innerHTML = "$" + b.toFixed(2);
+  total.innerHTML = "$" + (b + a + (a * 18) / 100).toFixed(2);
 });
